@@ -8,7 +8,7 @@
         <div>
             <!-- Header -->
             <header>
-                <img src="assests\images\logo.png" height="100px" width="150px" alt="logo"><br>
+                <a href="index.html"><img src="assests\images\logo.png" height="100px" width="150px" alt="logo"></a><br>
                 <a href="login.html">Login</a>
             </header>
             <!-- Content -->
@@ -17,7 +17,24 @@
                 <div>
                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
                 </div>
-                <a href="payment.html">Book Now</a>
+                <form action="payment.html" method="GET" autocomplete="off">
+                    <label for="adult">Adults:</label>
+                    <input type="number" name="adult" value="1" min="1" required/><br/>
+
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required/><br/>
+
+                    <label for="from date">From Date:</label>
+                    <input type="date" name="fromDate" required/><br/>
+
+                    <label for="to date">To Date:</label>
+                    <input type="date" name="toDate" required/><br/>
+
+                    <label for="total">Total:</label>
+                    <input type="number" name="price" readonly/><br/>
+
+                    <input type="submit" value="Book Now" />
+                </form>
                 <!-- Part 2 -->
                 <div>
                     <h2>Radisson Blu Hotel</h2>
