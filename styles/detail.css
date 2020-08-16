@@ -1,0 +1,19 @@
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+header img{
+    height: 60px;
+    width: 60px;
+}
+
+#image img{
+    width: 500px;
+    height: 500px;
+}
+
+footer img{
+    height: 20px;
+    width: 22px;
+}
