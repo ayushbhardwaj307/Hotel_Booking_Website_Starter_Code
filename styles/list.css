@@ -1,6 +1,12 @@
 html{
     height: 100%;
     width: 100%;
+    margin: 0%;
+}
+
+body{
+    margin: 0%;
+    background-color: #e0e0e0;
 }
 
 .container{
@@ -21,4 +27,18 @@ section img{
 footer img{
     height: 20px;
     width: 22px;
+}
+
+header{
+    background-color: rosybrown;
+}
+
+footer{
+    background-color: rosybrown;
+}
+
+#list-view div{
+    margin: 2%;
+    background-color: rgb(132,136,139);
+    width: 40%;
 }
