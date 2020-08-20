@@ -1,41 +1,7 @@
-html{
-    height: 100%;
-    width: 100%;
-    margin: 0%;
-}
-
-body{
-    margin: 0%;
-    background-color: #e0e0e0;
-}
-
-.container{
-    height: 100%;
-    width: 100%;
-}
-
-header img{
-    height: 60px;
-    width: 60px;
-}
-
 #image img{
     width: 500px;
     height: 500px;
     margin: 2% 4% 0% 4%;
-}
-
-footer img{
-    height: 20px;
-    width: 22px;
-}
-
-header{
-    background-color: rosybrown;
-}
-
-footer{
-    background-color: rosybrown;
 }
 
 #details{
@@ -44,4 +10,8 @@ footer{
 
 .description{
     margin: 1% 4% 2% 4%;
+}
+
+.content{
+    padding-top: 70px;
 }

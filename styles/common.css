@@ -1,0 +1,82 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+}
+
+body{
+    margin: 0%;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+header img{
+    height: 60px;
+    width: 60px;
+    vertical-align: middle;
+}
+
+header .login{
+    vertical-align: middle;
+}
+
+header{
+    background-color: rosybrown;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+footer img{
+    height: 20px;
+    width: 22px;
+}
+
+footer .icons{
+    vertical-align: middle;
+}
+
+.icons{
+    display: inline-block;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: rosybrown;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .copy-right{
+    font-size: 10px;
+    text-align: center;
+}
+
+.copy-right{
+    padding: 0% 0% 1% 0%;
+}
+
+footer .contact{
+    vertical-align: middle;
+}
+
+.contact a{
+    text-decoration: none;
+    color: black;
+}

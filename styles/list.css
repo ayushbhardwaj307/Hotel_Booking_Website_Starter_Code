@@ -1,44 +1,49 @@
-html{
-    height: 100%;
-    width: 100%;
-    margin: 0%;
-}
-
-body{
-    margin: 0%;
-    background-color: #e0e0e0;
-}
-
-.container{
-    width: 100%;
-    height: 100%;
-}
-
-header img{
-    height: 60px;
-    width: 60px;
-}
-
 section img{
     height: 200px;
     width: 250px;
-}
-
-footer img{
-    height: 20px;
-    width: 22px;
-}
-
-header{
-    background-color: rosybrown;
-}
-
-footer{
-    background-color: rosybrown;
 }
 
 #list-view div{
     margin: 2%;
     background-color: rgb(132,136,139);
     width: 40%;
+}
+
+div{
+    display: block;
+}
+
+.content .views {
+    position: relative;;
+}
+
+.content{
+    padding-top: 70px;
+}
+
+.content .views ul li {
+    display: inline;
+    padding: 0 20px;
+}
+.content .views ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+.content .views ul{
+    list-style: none;
+    text-align: center;
+    margin:0 auto;
+    padding: 0;
+}
+
+#map-view{
+    visibility: hidden;
+    display: none;
+}
+
+.details a{
+    text-decoration: none;
+    color: black;
 }
