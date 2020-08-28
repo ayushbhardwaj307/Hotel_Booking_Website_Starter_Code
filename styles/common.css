@@ -21,17 +21,28 @@ header img{
     height: 60px;
     width: 60px;
     vertical-align: middle;
+    margin-left: 1%;
+}
+
+header a{
+    margin-left: 1%;
+    margin-right: 2%;
 }
 
 header .login{
     vertical-align: middle;
+    margin-right: 2%;
 }
 
 header{
     background-color: rosybrown;
     width: 100%;
     z-index: 1;
-    position: fixed;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
 }
 
 header a{
@@ -50,6 +61,7 @@ footer .icons{
 
 .icons{
     display: inline-block;
+    margin-right: 2%;
 }
 
 .icons a{
@@ -59,8 +71,13 @@ footer .icons{
 footer{
     background-color: rosybrown;
     position: sticky;
-    width: 100%;
     bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 0;
 }
 
 footer .copy-right{
@@ -68,15 +85,17 @@ footer .copy-right{
     text-align: center;
 }
 
-.copy-right{
-    padding: 0% 0% 1% 0%;
-}
-
 footer .contact{
     vertical-align: middle;
+    margin-left: 2%;
 }
 
 .contact a{
     text-decoration: none;
     color: black;
+}
+
+.details-heading{
+    font-family: cursive;
+    font-weight: bold;
 }

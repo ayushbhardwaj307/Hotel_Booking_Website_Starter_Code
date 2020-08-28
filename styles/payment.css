@@ -1,32 +1,61 @@
-#part-1 img{
-    height: 500px;
-    width: 500px;
+.part-1 img{
+    width: 300px;
+    height: 270px;
 }
 
-#part-1{
+.part-1{
     background-color: rgb(132,136,139);
     width: 50%;
     /* height: 20%; */
     margin: 2% auto;
+    height:270px;
+    display: flex;
+    align-items: center;
 }
 
-#part-2{
+.part-2{
     margin: 2%;
 }
 
-#tariff-details{
+.tariff-details{
     margin: 2%;
-    border: 1px solid black;
-    border-radius: 5px;
+    /* border: 1px solid black;
+    border-radius: 5px; */
     padding: 1% 2%;
-}
-
-.content{
-    padding: 70px 0 40px 0;
-
 }
 
 .content a{
     text-decoration: none;
     color: black;
+}
+
+.content{
+    padding-top: 3%;
+}
+
+.hotel-description{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 2%;
+}
+
+.part-2{
+    margin-bottom: 10%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: rosybrown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;   
+}
+
+.customer-details p{
+    margin: 10% 0;
+}
+
+.tariff-details p{
+    margin: 8% 0;
 }

@@ -32,20 +32,66 @@
     font-size: 16px;
     border-radius:12px;
     width: 100%;
+    outline: none;
 }
 
 .city-cards{
-    margin: auto 15%;
-    text-align: center;
+    padding: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .city-cards img{
-    padding: 4%;
-    border-radius: 25%;
+    height: 150px;
+    width: 150px;
 }
 
 .city-cards a{
     text-decoration: none;
+}
+
+.city-cards img{
+    border-radius: 25%;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2; 
+    border-radius: 25%;
+    display: none;
+}
+
+.title{
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 2;
+    color: #f1f1f1;
+    display: none;
+}
+
+.images{
+    position: relative;
+    margin: 10px;
+}
+
+
+.images:hover .title{
+    display: block;
+}
+
+.images:hover .overlay{
+    display: block;
 }
 
 .view-more{
