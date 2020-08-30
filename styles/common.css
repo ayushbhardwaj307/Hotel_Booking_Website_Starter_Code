@@ -99,3 +99,7 @@ footer .contact{
     font-family: cursive;
     font-weight: bold;
 }
+
+.checked{
+    color: orange;
+}

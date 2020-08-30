@@ -20,13 +20,12 @@
     width: 500px;
     max-height: 350px;
     height: 350px;
-    margin: 3%;
 }
 
 .details{
-    width: 30%;
+    width: 20%;
     border-left: 1px solid;
-    margin-right: -10%;
+    
 }
 
 .details form{
@@ -60,3 +59,8 @@ body .details form .input input{
     padding: 2%;
 }
 
+.prev-icon,.next-icon{
+    color:rosybrown;
+    font-size: 55px;
+    background-image: none;
+}
