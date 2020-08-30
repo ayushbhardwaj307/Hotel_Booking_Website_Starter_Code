@@ -3,18 +3,23 @@
         <title>
             Login
         </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div>
+        <div class="info_container">
             <form action="index.html" method="GET" autocomplete="off">
                 <label for="name">Username:</label>
-                <input type="text" name="Username" placeholder="Enter Username" required />
+                <input type="text" name="Username" placeholder="Enter Username" required autocomplete="off"/>
                 <br/>
                 <label for="password">Password:</label>
-                <input type="password" name="Password" placeholder="Enter Password" required />
+                <input type="password" name="Password" placeholder="Enter Password" required autocomplete="off"/>
                 <br/>
                 <input type="submit" value="Login">
             </form>
         </div>
-    </body>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary">
+          Launch demo modal
+        </button>
 </html>

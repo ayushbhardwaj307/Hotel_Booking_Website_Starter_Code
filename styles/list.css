@@ -10,6 +10,11 @@
     height: 200px;
 }
 
+.hotels:hover{
+    background-color: rosybrown;
+    transition: .1s ease;
+}
+
 .details{
     display: flex;
     flex-direction: row;
@@ -49,10 +54,15 @@
     color: black;
 } 
 
-#map-view{
-    display: none;
+#map-view img{
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .content{
     padding-bottom: 5%;
+}
+
+.views {
+    margin-top: 2%;
 }
