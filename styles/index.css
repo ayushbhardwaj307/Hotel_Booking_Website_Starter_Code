@@ -84,6 +84,7 @@
 
 .images:hover .title{
     display: block;
+    margin-top: 8%;
 }
 
 .images:hover .overlay{
