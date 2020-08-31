@@ -23,7 +23,6 @@
 }
 
 .details{
-    width: 20%;
     border-left: 1px solid;
     
 }
@@ -55,7 +54,7 @@ body .details form .input input{
 }
 
 .book-now input{
-    margin-top: 5%;
+    margin-top: 3%;
     padding: 2%;
 }
 
@@ -63,4 +62,30 @@ body .details form .input input{
     color:rosybrown;
     font-size: 55px;
     background-image: none;
+}
+
+@media (min-width: 320px)  and (max-width: 575px){
+    .part-1 {
+        flex-direction: column;
+        min-height: 680px;
+    }
+    .col-sm-7,.col-sm-5{
+        padding: 0;
+    }
+
+    .content img {
+        min-width: 300px;
+        width: 100%;
+        min-height: 350px;
+    }
+    .details {
+        border-top: 1px solid;
+        border-left: none;
+        
+    }
+    .image{
+        width: 108%;
+        margin-left: -4% ;
+    }
+ 
 }

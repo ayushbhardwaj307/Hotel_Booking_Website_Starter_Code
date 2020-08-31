@@ -66,3 +66,33 @@
 .views {
     margin-top: 2%;
 }
+
+@media (min-width: 320px) and (max-width: 1000px) {
+    .hotels {
+        width: 90%;
+        margin: 3% auto;
+    }
+    #map-view img{
+        width: 100%;
+    }
+}
+@media (min-width: 320px) and (max-width: 576px) {
+    .hotels {
+        height: 320px;
+        width: 90%;
+        margin: 3% auto;
+    }
+    .details{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .details img{
+        width: 102%;
+    }
+
+    footer{
+        position: fixed;
+        width: 100%;
+    }
+}
