@@ -101,6 +101,10 @@
     color:black;
 }
 
+#next{
+    display: none;
+}
+
 @media only screen and (max-width :576px){
     .search-bar{
         width: 50%;

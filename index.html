@@ -11,18 +11,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/index.css">
         <link rel="stylesheet" href="./styles/common.css">
-        
+        <script async src="./scripts/common.js"></script>
+        <script src="./scripts/index.js"></script>
     </head>
     <body>
         <div class="main-container">
             <!-- Header -->
-            <header>
-                <img src="assests\images\logo.png" height="100px" width="150px" alt="logo">
-                <a class="login btn btn-light btn-sm text-uppercase" href="login.html" data-toggle="modal" data-target="#login-modal">Login</a>
+            <header id="header">
+                <!-- <img src="assests\images\logo.png" height="100px" width="150px" alt="logo">
+                <a class="login btn btn-light btn-sm text-uppercase" href="login.html" data-toggle="modal" data-target="#login-modal">Login</a> -->
             </header>
             <!-- Modal 1 Login -->
             <div class="login-modal modal" id="login-modal" data-backdrop="false">
-                <div class="modal-dialog" role="document">
+                <!-- <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
@@ -50,7 +51,7 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!-- Content -->
             <div class="content">
@@ -83,7 +84,7 @@
                         <p class="title">kolkata</p>
                     </div>  
                 </div>
-                <div class="city-cards">
+                <div class="city-cards" id="next">
                     <div class="images">
                         <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" alt="Chennai" class="city" >
                         <div class="overlay"></div>
@@ -106,12 +107,12 @@
                     </div> 
                 </div>
                 <div class="view-more mb-4">
-                    <a class="btn btn-secondary text-white" id="viewMore">View More</a>
+                    <a class="btn btn-secondary text-white" id="viewMore" onclick="view()">View More</a>
                 </div>
             </div>
             <!-- Footer -->
-            <footer>
-                <div class="contact">
+            <footer id="footer">
+                <!-- <div class="contact">
                     <a href="contact.html" class="btn btn-info btn-sm text-white" data-toggle="modal" data-target="#contactus-modal" target="_self">Contact Us</a>
                 </div>
                 <div class="copy-right"> &copy; 2020 ROOM SEARCH PVT. LTD.</div>
@@ -125,11 +126,11 @@
                     <a href="https://www.instagram.com" target="_blank">
                         <img src="assests\images\twitter.png" alt="twitter" height="20px" width="22px">
                     </a>
-                </div>
+                </div> -->
             </footer>
             <!-- Modal 2 Contact Us -->
         <div class="contactus-modal modal" id="contactus-modal" data-backdrop="false">
-            <div class="modal-dialog" role="document">
+            <!-- <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
@@ -153,7 +154,7 @@
                         </form>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
