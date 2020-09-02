@@ -9,9 +9,10 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./styles/payment.css">
-        <link rel="stylesheet" href="./styles/common.css">
-        <script async src="./scripts/common.js"></script> 
+        <link rel="stylesheet" href="styles/payment.css">
+        <link rel="stylesheet" href="styles/common.css">
+        <script async src="scripts/common.js"></script> 
+        <script async src="scripts/payment.js"></script> 
     </head>
     <body>
         <div class=" main-container">
@@ -48,7 +49,7 @@
                         <p><b class="details-heading">Tariff Breakdown:</b> Rs.1000 x 2 Adults x 5 Nights</p>
                         <p><b class="details-heading">Total Amount:</b> Rs.10000</p>
                     </div>
-                    <a class="pay-now btn bg-success text-white disabled" href="payment.html">Pay Now</a>
+                    <a class="pay-now btn bg-success text-white " onclick="payment()" href="payment.html">Pay Now</a>
                 </div>
             </div>
             <!-- Footer -->

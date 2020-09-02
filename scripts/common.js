@@ -7,8 +7,7 @@ function headertemplate() {
     let headertemplate = '<a href="index.html">'+
                         '<img src="assests/images/logo.png" height="100px" width="150px" alt="logo">'+
                         '</a>'+
-                        '<a class="login btn btn-light btn-sm text-uppercase" href="login.html" data-toggle="modal" data-target="#login-modal">Login</a>'+
-                        '<a class="login btn btn-light btn-sm text-uppercase" id="logout">LOGOUT</a>';
+                        '<a class="login btn btn-light btn-sm text-uppercase" href="login.html" data-toggle="modal" data-target="#login-modal" onClick="loginFunction()" id="login-button">Login</a>';
     document.getElementById('header').innerHTML += headertemplate;
 }
 
@@ -37,13 +36,32 @@ function loginTemplate() {
                     '</div>'+
                 '</div>'+
                 '<div class="modal-footer justify-content-center pb-0">'+
-                    '<button type="button" class="btn btn-primary" data-dismiss="modal" onClick="loginFunction(event)">Login</button>'+
+                    '<button type="button" class="btn btn-primary" data-dismiss="modal" onClick="userLogin()" >Login</button>'+
                 '</div>'+
             '</form>'+
         '</div>'+
     '</div>'+
         '</div>';
     document.getElementById('login-modal').innerHTML += logintemplate;
+}
+
+function loginFunction(){
+    if(document.getElementById('login-button').innerHTML === 'LOGOUT'){
+        localStorage.clear();
+        document.getElementById('login-button').innerHTML = 'LOGIN';
+    }
+}
+
+
+function userLogin(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if(username === "admin" && password === "admin"){
+        alert('Successfully logged-in')
+        localStorage.username = "admin";
+        localStorage.password = "admin";
+        document.getElementById('login-button').innerHTML='LOGOUT';
+    }
 }
 
 
@@ -98,4 +116,3 @@ function contacttemplate() {
     '</div>';
 document.getElementById('contactus-modal').innerHTML += contacttemplate;
 }
-
